@@ -1,22 +1,12 @@
-# RSA
-My C++ implementation of the RSA algorithm
+# RSA Cryptosystem Project <br />
+# CSCI 4900 - 6600 <br />
+# Chris Keiningham <br />
 
- ----------------------------------
-|  ______________________________  |
-| |      	RSA Project   		     | |
-| |                              | |
-| |        CSCI 4900/6600        | |
-| |       Chris Keiningham       | |
-| |                              | |
-| |______________________________| |
-|                                  |
- ---------------------------------- 
-
-
+<br />
 i. Explanation / use of program
+<br />
 
-
-My implementation of the RSA Cryptosystem in C++ 11 for Selected Topics in Cyber Security (CSCI 4900-6600) at MTSU
+My implementation of the RSA Cryptosystem in C++ 11 for Selected Topics in Cyber Security (CSCI 4900-6600) at MTSU <br />
 The RSA algorithm is from 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman.
 
 
@@ -38,9 +28,9 @@ Text is decrypted using the public key:
 - M = C^e (mod n)
 
 
-Plaintext is read from plaintext.txt
-Encrypted text is read from plaintext.txt and saved to ciphertext.txt
-Decrypted text is read from ciphertext.txt and saved to decoded.txt
+Plaintext is read from plaintext.txt <br />
+Encrypted text is read from plaintext.txt and saved to ciphertext.txt <br />
+Decrypted text is read from ciphertext.txt and saved to decoded.txt <br />
 
 
 Keys are 16-bit.
@@ -54,9 +44,9 @@ Algorithms used:
 
 
 
-
+<br />
 ii. How to use
-
+<br />
 
 Run Makefile in Terminal:
 cd to directory
@@ -89,19 +79,20 @@ If file not found, program will terminate.
 
 
 
-
+<br />
 iii. Proof
+<br />
 
-C = (M^e) mod n 
-M = (C^d) mod n
+C = (M^e) mod n  <br />
+M = (C^d) mod n <br />
 
-d is selected as the modular multiplicative inverse such that ed mod ϕ(n) = 1
-Therefore, ed = 1 mod ϕ(n)
+d is selected as the modular multiplicative inverse such that ed mod ϕ(n) = 1 <br />
+Therefore, ed = 1 mod ϕ(n) <br />
 
 Knowing this,
-C = (M^e) mod n
-C^d = (M^e)^d mod n
-C^d = (M^ed) mod n
-C^d = (M^1 mod ϕ(n)) mod n
-C^d = M mod n
-C^d mod n = M
+C = (M^e) mod n <br />
+C^d = (M^e)^d mod n <br />
+C^d = (M^ed) mod n <br />
+C^d = (M^1 mod ϕ(n)) mod n <br />
+C^d = M mod n <br />
+C^d mod n = M <br />
