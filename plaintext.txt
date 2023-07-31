@@ -1,0 +1,21 @@
+Hello CSCI 4900/6600!
+
+This is the RSA Encryption and Decryption Cyber Security Project
+The RSA algorithm is named after Ron Rivest, Adi Shamir, and Leonard Adleman who designed the algorithm in 1977.
+Despite its age, it is still used widely today for its high level of security.
+Its process involves the following key components:
+
+Two prime numbers, p and q
+Their product, n: p*q
+Euler's Totient function, phi(n): (p-1) * (q-1)
+Public exponent, e such that e is relatively prime to phi(n) and between 1 and phi(n) exclusive
+Private exponent, d such that d is the modular multiplicative inverse to e and phi(n)
+
+Once we have the following components, we have our private key and public key:
+Private key: {d, n}
+Public key: {e, n}
+
+The encryption formula described in RSA as C = M^d (mod n)
+The decryption formula is described in RSA as M = C^e (mod n)
+
+Cracking the RSA algorithm becomes very difficult computationally as we increase bit size. While the computation of encryption may increase, its security grows exponentially. 
